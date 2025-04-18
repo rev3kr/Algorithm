@@ -1,5 +1,9 @@
 # Algorithm
 
+## General
+일반적인 함수에 대해 설명.
+- enumerate(it) : iterable한 객체를 반복하며 인덱스와 값 동시 추출
+
 ## import re
 ### re 모듈
 파이썬 정규표현식 모듈. 정규표현식 앞에 r(raw string)을 붙여 사용.
