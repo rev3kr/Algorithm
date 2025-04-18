@@ -1,11 +1,22 @@
 # Algorithm
 
+## import re
+### re 모듈
+파이썬 정규표현식 모듈. 정규표현식 앞에 r(raw string)을 붙여 사용.
+- match(re, s) : 문자열 시작부터 패턴 확인
+- search(re, s) : 문자열 어디든 패턴 확인
+- findall(re, s) : 모든 패턴을 리스트로 반환
+- finditer(re, s) : 모든 패턴을 이터레이터로 반환
+- sub(re, s2, s1) : 패턴을 다른 문자열로 치환
+- split(re, s) : 패턴을 기준으로 문자열 분리리
+
 ## import statistics
 ### statistics 모듈
 기초 통계 계산을 도와주는 내장 모듈.
 - mean(x) : 평균 / median(x) : 중앙값 (짝수 개면 평균 중앙값)
 - multimode(x) : 최빈값 (값이 여러개여도 반환)
-- [p]stdev(x) : 표준편차 / variance(x) : 분산
+- [p]stdev(x) : [모]표준편차 / [p]variance(x) : [모]분산
+- quantiles(data, n) : 분위 계산
 
 
 ## import math
