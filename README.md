@@ -27,6 +27,7 @@
 - pow(x, y) : 거듭제곱(x^y) / factorial(n) : 팩토리얼
 - gcd(x, y) : 최대공약수 / lcm(x, y) : 최소공배수
 - log(x, y) : 로그(밑이 y, 기본 e) / exp(x) : 자연상수 제곱
+- prod(x) : 전체 곱하기
 
 - sin(x), cos(x), tan(x) : 삼각함수
 - radians(deg) : 각도 -> 라디안 / degrees(rad) : 라디안 -> 각도
