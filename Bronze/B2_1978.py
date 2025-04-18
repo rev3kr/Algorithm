@@ -1,4 +1,4 @@
-lst = [True] * 1001
+lst = [True] * 10001
 lst[0:2] = [False, False]
 for i in range(2, int(1000**0.5)+1):
     if lst[i]:
