@@ -8,7 +8,7 @@
 - findall(re, s) : 모든 패턴을 리스트로 반환
 - finditer(re, s) : 모든 패턴을 이터레이터로 반환
 - sub(re, s2, s1) : 패턴을 다른 문자열로 치환
-- split(re, s) : 패턴을 기준으로 문자열 분리리
+- split(re, s) : 패턴을 기준으로 문자열 분리
 
 ## import statistics
 ### statistics 모듈
