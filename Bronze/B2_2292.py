@@ -8,5 +8,4 @@ while n > 0:
     else:
         b += 6
     temp += 1
-    print(n)
 print(temp)
