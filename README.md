@@ -4,6 +4,7 @@
 일반적인 함수에 대해 설명.
 - enumerate(iter) : iterable한 객체를 반복하며 인덱스와 값 동시 추출
 - append(x) : 리스트 끝에 x 추가 / extend(iter) : 리스트 끝에 iterable한 모든 요소 추가
+
 ## import heapq
 ### heapq 모듈
 리스트를 힙 구조로 다룰 수 있게 하는 모듈.
