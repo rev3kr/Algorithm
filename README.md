@@ -4,6 +4,14 @@
 일반적인 함수에 대해 설명.
 - enumerate(it) : iterable한 객체를 반복하며 인덱스와 값 동시 추출
 
+## import heapq
+### heapq 모듈
+리스트를 힙 구조로 다룰 수 있게 하는 모듈.
+- heapify(list) : 힙 구조 변경
+- heappush(heap, x) : 힙 추가(정렬) / heappop(heap) : 가장 작은 값 추출
+- nlargest(k, iter) : 가장 큰 값 k개 리스트로 반환
+- nsmallest(k, iter) : 가장 작은 값 k개 리스트로 반환
+
 ## import re
 ### re 모듈
 파이썬 정규표현식 모듈. 정규표현식 앞에 r(raw string)을 붙여 사용.
