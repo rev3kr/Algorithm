@@ -1,7 +1,7 @@
 # Algorithm
-1. [Sorting](#sorting)
+1. Sorting
     + [Counting Sort](#counting-sort-계수-정렬)
-2. [Modules](#modules)
+2. Modules
     + [General](#general)
     + [heapq](#import-heapq)
     + [re](#import-re)
