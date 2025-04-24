@@ -1,15 +1,16 @@
 # Algorithm
 1. Sorting
-    * [Counting Sort](#counting-sort-계수-정렬)
+    - [Counting Sort](#counting-sort-계수-정렬)
 2. Modules
-    + [General](#general)
-    + [heapq](#import-heapq)
-    + [re](#import-re)
-    + [statistics](#import-statistics)
-    + [math](#import-math)
+    - [General](#general)
+    - [heapq](#import-heapq)
+    - [re](#import-re)
+    - [statistics](#import-statistics)
+    - [math](#import-math)
 ## Sorting
 
 ### Counting Sort (계수 정렬)
+---
 **값의 범위가 작은 경우 빠른 속도를 갖는 정렬 알고리즘.**
 
 (Input Array = IA, Counting Array = CA, Result Array = RA)
