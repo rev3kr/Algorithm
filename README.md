@@ -1,7 +1,12 @@
 # Algorithm
 1. [Sorting](#sorting)
+    + [Counting Sort](#counting-sort-계수-정렬)
 2. [Modules](#modules)
-
+    + [General](#general)
+    + [heapq](#import-heapq)
+    + [re](#import-re)
+    + [statistics](#import-statistics)
+    + [math](#import-math)
 ## Sorting
 
 ### Counting Sort (계수 정렬)
@@ -9,7 +14,7 @@
 
 (Input Array = IA, Counting Array = CA, Result Array = RA)
 
-#### 양수 배열
+**양수 배열**
 ```
 0. IA length = n = RA length
 1. CA length = max(IA) + 1 = k
@@ -19,7 +24,7 @@
    CA[IA[i]] -= 1 (i = range(n-1, -1, -1))
 ```
 
-#### 음수 포함 배열 (offset 이용)
+**음수 포함 배열 (offset 이용)**
 ```
 0. IA length = n = RA length;
    offset = -1 * min(IA)
