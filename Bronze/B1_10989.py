@@ -1,6 +1,7 @@
 import sys
 input = sys.stdin.readline
 t = int(input())
+
 ## Counting Sort
 lst = [0] * (10001)
 temp = 0
