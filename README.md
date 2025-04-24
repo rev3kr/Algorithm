@@ -33,7 +33,7 @@
 
 ## Modules
 ### General
-**일반적인 함수에 대한한 설명**
+**일반적인 함수에 대한 설명**
 - `enumerate(iter)` : iterable한 객체를 반복하며 인덱스와 값 동시 추출
 - `append(x)` : 리스트 끝에 x 추가 / `extend(iter)` : 리스트 끝에 iterable한 모든 요소 추가
 
@@ -45,7 +45,7 @@
 - `nsmallest(k, iter)` : 가장 작은 값 k개 리스트로 반환
 
 ### import re
-**파이썬 정규표현식 모듈**
+**파이썬 정규표현식 모듈**<br/>
 정규표현식 앞에 r(raw string)을 붙여 사용
 - `match(re, s)` : 문자열 시작부터 패턴 확인
 - `search(re, s)` : 문자열 어디든 패턴 확인
