@@ -1,6 +1,6 @@
 # Algorithm
 1. [Sorting](#sorting)
-    1.1. [Counting Sort](#counting-sort-계수-정렬)
+1.1. [Counting Sort](#counting-sort-계수-정렬)
 2. [Modules](#modules)
 
 ## Sorting
