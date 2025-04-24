@@ -15,18 +15,21 @@
 1. CA length = max(IA) + 1 = k
 2. CA[IA[i]] += 1 (i = range(0, n))
 3. CA[i] += CA[i-1] (i = range(1, k))
-4. RA[CA[IA[i]]-1] = IA[i]; CA[IA[i]] -= 1 (i = range(n-1, -1, -1))
+4. RA[CA[IA[i]]-1] = IA[i]
+   CA[IA[i]] -= 1 (i = range(n-1, -1, -1))
 ```
 
 #### 음수 포함 배열 (offset 이용)
 ```
-0. IA length = n = RA length; offset = -1 * min(IA)
+0. IA length = n = RA length;
+   offset = -1 * min(IA)
 1. CA length = max(IA) - min(IA) + 1 = k
 2. CA[IA[i] + offset] += 1 (i = range(0, n))
 3. CA[i] += CA[i-1] (i = range(1, k))
-4. RA[CA[IA[i + offset]]-1] = IA[i]; CA[IA[i + offset]] -= 1 (i = range(n-1, -1, -1))
+4. RA[CA[IA[i + offset]]-1] = IA[i];
+   CA[IA[i + offset]] -= 1 (i = range(n-1, -1, -1))
 ```
--> Stable Sort (3 - Accumulate, 4 - Reverse Insertion)
+-> **Stable Sort** (3 - Accumulate, 4 - Reverse Insertion)
 
 1,2,4번 과정 O(n), 3번 과정 O(k) -> **시간 복잡도 O(n + k), 메모리 사용량 O(k)**
 즉, IA의 최댓값이 변수로 작용 - 범위가 작을 때 높은 효율
