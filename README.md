@@ -10,6 +10,7 @@
 3. Data Type
    - [List](#list)
    - [Set](#set)
+   - [Dictionary](#dictionary)
 
 ---
 
@@ -96,9 +97,9 @@
 - 탐색 시간 O(n) - 선형 탐색(Linear Search) ex. `x in list`
 
 **Method**
-- `append(x)` : 리스트 끝에 x 추가
-- `extend(iter)` : 리스트 끝에 iterable한 모든 요소 추가
-- `index(x)` : x의 인덱스 추출
+- `l.append(x)` : 리스트 끝에 x 추가
+- `l.extend(iter)` : 리스트 끝에 iterable한 모든 요소 추가
+- `l.index(x)` : x의 인덱스 추출
 
 ## Set
 **순서가 없고(Unordered), 변경 가능한(Mutable) 자료구조**
@@ -109,9 +110,26 @@ frozenset은 변경 불가능(Immutable)
 - 탐색 시간 O(1) - 해시 탐색(Hash Table) ex. `x in set`
 
 **Method**
-- `add(x)` : 원소 x 추가
-- `remove(x)` : 원소 x 제거 (없으면 에러 발생)
-/ `discard(x)` : 원소 x 제거 (없어도 에러 X)
-- `clear()` : 모든 원소 제거
-- `update(iter)` : 여러 요소 한번에 추가 (원본 변경)
-/ `union(iter)` : 여러 요소 한번에 추가 (새 Set 반환)
+- `s.add(x)` : 원소 x 추가
+- `s.remove(x)` : 원소 x 제거 (없으면 에러 발생)
+/ `s.discard(x)` : 원소 x 제거 (없어도 에러 X)
+- `s.clear()` : 모든 원소 제거
+- `s.update(iter)` : 여러 요소 한번에 추가 (원본 변경)
+/ `s.union(iter)` : 여러 요소 한번에 추가 (새 Set 반환)
+
+## Dictionary
+**변경 가능한(Mutable) Key - Value 쌍 자료구조**
+- 입력 순서 보장
+- 키 중복 불가
+- 해시 가능한 키 값 (Immutable)
+- 삽입, 조회, 삭제가 빠름름
+- 탐색 시간 O(1) - 해시 탐색(Hash Table, Map), 최악 O(n)
+
+**Method**
+- `d.get(key, default)` : 값 조회, 키 없으면 default 값 반환
+/ `d["a"]` : 값 조회, 키 없으면 오류
+- `d.keys()` : 키 목록 반환 / `d.values()` : 값 목록 반환
+- `d.items()` : (키, 값) 쌍 반환
+- `d.pop(key)` : 키 제거하고 값 반환
+- `d.update(dict) == d.update(key=value) == d.update(list(key, value))`<br/>
+: 키-값 쌍 한번에 추가, 키 존재 시 값 덮어씀 / 키워드 방식(key=value)는 문자열 키에만 사용 가능
