@@ -32,7 +32,6 @@
 4. RA[CA[IA[i]]-1] = IA[i]
    CA[IA[i]] -= 1 (i = range(n-1, -1, -1))
 ```
-
 **음수 포함 배열 (offset 이용)**
 ```
 0. IA length = n = RA length;
