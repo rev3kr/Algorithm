@@ -62,10 +62,10 @@ a를 b로 나눈 나머지 r에 대해 gcd(a, b) = gcd(b, r)
 
 ## import heapq
 **리스트를 힙 구조로 다룰 수 있게 하는 모듈**
-- `heapify(list)` : 힙 구조 변경
-- `heappush(heap, x)` : 힙 추가(정렬) / `heappop(heap)` : 가장 작은 값 추출
-- `nlargest(k, iter)` : 가장 큰 값 k개 리스트로 반환
-- `nsmallest(k, iter)` : 가장 작은 값 k개 리스트로 반환
+- `.heapify(list)` : 힙 구조 변경
+- `.heappush(heap, x)` : 힙 추가(정렬) / `.heappop(heap)` : 가장 작은 값 추출
+- `.nlargest(k, iter)` : 가장 큰 값 k개 리스트로 반환
+- `.nsmallest(k, iter)` : 가장 작은 값 k개 리스트로 반환
 
 ## import re
 **파이썬 정규표현식 모듈**<br/>
