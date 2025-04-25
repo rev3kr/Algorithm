@@ -1,14 +1,15 @@
 1. Algorithm<br/><t/>
-1.1. Sorting
-      - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
-
-2. Modules
+1.1. Sorting (정렬)
+   - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
+1.2. Number Theory (정수론)
+   - [Euclidean Algorithm (유클리드 호제법)]
+2. Modules (모듈)
    - [General](#general)
    - [heapq](#import-heapq)
    - [re](#import-re)
    - [statistics](#import-statistics)
    - [math](#import-math)
-3. Data Type
+3. Data Type (자료형형)
    - [List](#list)
    - [Set](#set)
    - [Dictionary](#dictionary)
@@ -16,7 +17,7 @@
 ---
 
 # Algorithm
-
+## Sorting
 ## Counting Sort (계수 정렬)
 **값의 범위가 작은 경우 빠른 속도를 갖는 정렬 알고리즘.**
 
