@@ -122,7 +122,7 @@ frozenset은 변경 불가능(Immutable)
 - 입력 순서 보장
 - 키 중복 불가
 - 해시 가능한 키 값 (Immutable)
-- 삽입, 조회, 삭제가 빠름름
+- 삽입, 조회, 삭제가 빠름
 - 탐색 시간 O(1) - 해시 탐색(Hash Table, Map), 최악 O(n)
 
 **Method**
