@@ -9,7 +9,7 @@
    - [re](#import-re)
    - [statistics](#import-statistics)
    - [math](#import-math)
-3. Data Type (자료형형)
+3. Data Type (자료형)
    - [List](#list)
    - [Set](#set)
    - [Dictionary](#dictionary)
