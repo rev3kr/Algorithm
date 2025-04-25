@@ -1,8 +1,8 @@
 1. Algorithm
-- Sorting (정렬)
-   - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
-<br>1.2. Number Theory (정수론)
-   - [Euclidean Algorithm (유클리드 호제법)](#euclidean-algorithm-유클리드-호제법)
+   - Sorting (정렬)
+      - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
+   - Number Theory (정수론)
+      - [Euclidean Algorithm (유클리드 호제법)](#euclidean-algorithm-유클리드-호제법)
 2. Modules (모듈)
    - [General](#general)
    - [heapq](#import-heapq)
