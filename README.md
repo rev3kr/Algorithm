@@ -2,7 +2,7 @@
 <t/>1.1. Sorting (정렬)
    - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
 <t/>1.2. Number Theory (정수론)
-   - [Euclidean Algorithm (유클리드 호제법)]
+   - [Euclidean Algorithm (유클리드 호제법)](#euclidean-algorithm-유클리드-호제법)
 2. Modules (모듈)
    - [General](#general)
    - [heapq](#import-heapq)
@@ -19,8 +19,7 @@
 # Algorithm
 ## Sorting
 ### Counting Sort (계수 정렬)
----
-**값의 범위가 작은 경우 빠른 속도를 갖는 정렬 알고리즘.**
+값의 범위가 작은 경우 빠른 속도를 갖는 정렬 알고리즘.
 
 (Input Array = IA, Counting Array = CA, Result Array = RA)
 
@@ -48,6 +47,15 @@
 
 1,2,4번 과정 O(n), 3번 과정 O(k) -> **시간 복잡도 O(n + k), 메모리 사용량 O(k)**
 즉, IA의 최댓값이 변수로 작용 - 범위가 작을 때 높은 효율
+
+## Number Theory
+### Euclidean Algorithm (유클리드 호제법)
+최대공약수를 구할 때 가장 빠르고 간단한 알고리즘.
+```
+a, b (a > b)
+a를 b로 나눈 나머지 r에 대해 gcd(a, b) = gcd(b, r)
+```
+-> **시간 복잡도 O(log(min(a, b)))**
 
 # Modules
 ## General
@@ -77,7 +85,6 @@
 - `multimode(x)` : 최빈값 (값이 여러개여도 반환)
 - `[p]stdev(x)` : [모]표준편차 / `[p]variance(x)` : [모]분산
 - `quantiles(data, n)` : 분위 계산
-
 
 ## import math
 **수학 관련 함수들을 모아놓은 표준 라이브러리**
