@@ -111,7 +111,7 @@ frozenset은 변경 불가능(Immutable)
 **Method**
 - `add(x)` : 원소 x 추가
 - `remove(x)` : 원소 x 제거 (없으면 에러 발생)
-  `discard(x)` : 원소 x 제거 (없어도 에러 X)
+/ `discard(x)` : 원소 x 제거 (없어도 에러 X)
 - `clear(x)` : 모든 원소 제거
 - `update(iter)` : 여러 요소 한번에 추가 (원본 변경)
-  `union(iter)` : 여러 요소 한번에 추가 (새 Set 반환)
+/ `union(iter)` : 여러 요소 한번에 추가 (새 Set 반환)
