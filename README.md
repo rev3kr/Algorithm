@@ -132,4 +132,4 @@ frozenset은 변경 불가능(Immutable)
 - `d.items()` : (키, 값) 쌍 반환
 - `d.pop(key)` : 키 제거하고 값 반환
 - `d.update(dict) == d.update(key=value) == d.update(list(key, value))`<br/>
-: 키-값 쌍 한번에 추가, 키 존재 시 값 덮어씀 / 키워드 방식(key=value)는 문자열 키에만 사용 가능
+: 키-값 쌍 한번에 추가, 키 존재 시 값 덮어씀 / 키워드 방식(key=value)은 문자열 키에만 사용 가능
