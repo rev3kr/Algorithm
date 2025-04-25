@@ -1,12 +1,18 @@
 # Algorithm
 1. Sorting
-    - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
+   - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
 2. Modules
-    - [General](#general)
-    - [heapq](#import-heapq)
-    - [re](#import-re)
-    - [statistics](#import-statistics)
-    - [math](#import-math)
+   - [General](#general)
+   - [heapq](#import-heapq)
+   - [re](#import-re)
+   - [statistics](#import-statistics)
+   - [math](#import-math)
+3. Data Type
+   - [List](#list)
+   - [Set](#set)
+
+---
+
 # Sorting
 
 ## Counting Sort (계수 정렬)
@@ -43,8 +49,6 @@
 ## General
 **일반적인 함수에 대한 설명**
 - `enumerate(iter)` : iterable한 객체를 반복하며 인덱스와 값 동시 추출
-- `append(x)` : 리스트 끝에 x 추가 / `extend(iter)` : 리스트 끝에 iterable한 모든 요소 추가
-- `index(x)` : x의 인덱스 추출 > **시간 복잡도 O(n)**
 
 ## import heapq
 **리스트를 힙 구조로 다룰 수 있게 하는 모듈**
@@ -82,3 +86,32 @@
 - `sin(x), cos(x), tan(x)` : 삼각함수
 - `radians(deg)` : 각도 -> 라디안 / `degrees(rad)` : 라디안 -> 각도
 - `.pi` : 원주율 / `.e` : 자연로그 밑 / `.inf` : 무한대 / `.nan` : 숫자 아님
+
+# Data Type
+## List
+**순서가 있는(Ordered), 변경 가능한(Mutable) 자료구조**
+- 순서가 있어 인덱스 접근 가능
+- 중복 허용
+- 삽입, 삭제, 정렬 등 다양하게 조작 가능
+- 탐색 시간 O(n) - 선형 탐색(Linear Search) ex. `x in list`
+
+**Method**
+- `append(x)` : 리스트 끝에 x 추가
+- `extend(iter)` : 리스트 끝에 iterable한 모든 요소 추가
+- `index(x)` : x의 인덱스 추출
+
+## Set
+**순서가 없고(Unordered), 변경 가능한(Mutable) 자료구조**
+frozenset은 변경 불가능(Immutable)
+- 순서가 없어 인덱스 접근 불가능
+- 중복 자동 제거
+- 탐색, 삽입, 삭제가 빠름
+- 탐색 시간 O(1) - 해시 탐색(Hash Table) ex. `x in set`
+
+**Method**
+- `add(x)` : 원소 x 추가
+- `remove(x)` : 원소 x 제거 (없으면 에러 발생)
+  `discard(x)` : 원소 x 제거 (없어도 에러 X)
+- `clear(x)` : 모든 원소 제거
+- `update(iter)` : 여러 요소 한번에 추가 (원본 변경)
+  `union(iter)` : 여러 요소 한번에 추가 (새 Set 반환)
