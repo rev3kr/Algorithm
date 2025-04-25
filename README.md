@@ -9,6 +9,7 @@
    - [re](#import-re)
    - [statistics](#import-statistics)
    - [math](#import-math)
+   - [functools](#import-functools)
 3. Data Type (자료형)
    - [List](#list)
    - [Set](#set)
@@ -69,31 +70,39 @@ a를 b로 나눈 나머지 r에 대해 gcd(a, b) = gcd(b, r)
 ## import re
 **파이썬 정규표현식 모듈**<br/>
 정규표현식 앞에 r(raw string)을 붙여 사용
-- `match(re, s)` : 문자열 시작부터 패턴 확인
-- `search(re, s)` : 문자열 어디든 패턴 확인
-- `findall(re, s)` : 모든 패턴을 리스트로 반환
-- `finditer(re, s)` : 모든 패턴을 이터레이터로 반환
-- `sub(re, s2, s1)` : 패턴을 다른 문자열로 치환
-- `split(re, s)` : 패턴을 기준으로 문자열 분리
+- `.match(re, s)` : 문자열 시작부터 패턴 확인
+- `.search(re, s)` : 문자열 어디든 패턴 확인
+- `.findall(re, s)` : 모든 패턴을 리스트로 반환
+- `.finditer(re, s)` : 모든 패턴을 이터레이터로 반환
+- `.sub(re, s2, s1)` : 패턴을 다른 문자열로 치환
+- `.split(re, s)` : 패턴을 기준으로 문자열 분리
 
 ## import statistics
 **기초 통계 계산을 도와주는 내장 모듈**
-- `mean(x)` : 평균 / `median(x)` : 중앙값 (짝수 개면 평균 중앙값)
-- `multimode(x)` : 최빈값 (값이 여러개여도 반환)
-- `[p]stdev(x)` : [모]표준편차 / `[p]variance(x)` : [모]분산
-- `quantiles(data, n)` : 분위 계산
+- `.mean(x)` : 평균 / `.median(x)` : 중앙값 (짝수 개면 평균 중앙값)
+- `.multimode(x)` : 최빈값 (값이 여러개여도 반환)
+- `.[p]stdev(x)` : [모]표준편차 / `.[p]variance(x)` : [모]분산
+- `.quantiles(data, n)` : 분위 계산
 
 ## import math
 **수학 관련 함수들을 모아놓은 표준 라이브러리**
-- `ceil(x)` : 올림 / `floor(x)` : 내림
-- `sqrt(x)` : 제곱근 / `isqrt(n)` :  정수 제곱근
-- `pow(x, y)` : 거듭제곱(x^y) / `factorial(n)` : 팩토리얼
-- `gcd(x, y)` : 최대공약수 / `lcm(x, y)` : 최소공배수
-- `log(x, y)` : 로그(밑이 y, 기본 e) / `exp(x)` : 자연상수 제곱
-- `prod(x)` : 곱셈
-- `sin(x), cos(x), tan(x)` : 삼각함수
-- `radians(deg)` : 각도 -> 라디안 / `degrees(rad)` : 라디안 -> 각도
+- `.ceil(x)` : 올림 / `.floor(x)` : 내림
+- `.sqrt(x)` : 제곱근 / `.isqrt(n)` :  정수 제곱근
+- `.pow(x, y)` : 거듭제곱(x^y) / `.factorial(n)` : 팩토리얼
+- `.gcd(x, y)` : 최대공약수 / `.lcm(x, y)` : 최소공배수
+- `.log(x, y)` : 로그(밑이 y, 기본 e) / `.exp(x)` : 자연상수 제곱
+- `.prod(x)` : 곱셈
+- `.sin(x), .cos(x), .tan(x)` : 삼각함수
+- `.radians(deg)` : 각도 -> 라디안 / `degrees(rad)` : 라디안 -> 각도
 - `.pi` : 원주율 / `.e` : 자연로그 밑 / `.inf` : 무한대 / `.nan` : 숫자 아님
+
+## import functools
+**함수를 다루는 데 유용한 내장 모듈**
+- `.reduce(func, iterable)` : iterable 객체에 왼쪽에서 오른쪽으로 누적 계산
+- `.lru_cache(maxsize=None)` : 재귀 함수 자동 캐싱
+- `.partial(func, *args, **kwargs)` : 함수 인자 일부 고정해서 새 함수 생성
+- `.cmp_to_key(func)` : 옛날 방식 비교 함수 사용 가능
+- `@ .wraps(func)` : 데코레이터 안에서 원래 함수 메타데이터 유지
 
 # Data Type
 ## List
