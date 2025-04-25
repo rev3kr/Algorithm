@@ -1,5 +1,5 @@
 1. Algorithm
-<br><t>1.1. Sorting (정렬)
+- Sorting (정렬)
    - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
 <br>1.2. Number Theory (정수론)
    - [Euclidean Algorithm (유클리드 호제법)](#euclidean-algorithm-유클리드-호제법)
