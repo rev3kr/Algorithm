@@ -1,7 +1,7 @@
-1. Algorithm<br/>
-<t/>1.1. Sorting (정렬)
+1. Algorithm
+<br><t>1.1. Sorting (정렬)
    - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
-<t/>1.2. Number Theory (정수론)
+<br><t>1.2. Number Theory (정수론)
    - [Euclidean Algorithm (유클리드 호제법)](#euclidean-algorithm-유클리드-호제법)
 2. Modules (모듈)
    - [General](#general)
@@ -20,7 +20,7 @@
 ## Sorting
 ### Counting Sort (계수 정렬)
 값의 범위가 작은 경우 빠른 속도를 갖는 정렬 알고리즘.<br>
-(Input Array = IA, Counting Array = CA, Result Array = RA)
+(Input Array = IA, Counting Array = CA, Result Array = RA)<br>
 **양수 배열**
 ```
 0. IA length = n = RA length
