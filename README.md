@@ -103,6 +103,7 @@
 
 ## Set
 **순서가 없고(Unordered), 변경 가능한(Mutable) 자료구조**
+<br/>
 frozenset은 변경 불가능(Immutable)
 - 순서가 없어 인덱스 접근 불가능
 - 중복 자동 제거
