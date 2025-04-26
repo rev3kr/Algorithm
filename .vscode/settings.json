@@ -13,6 +13,7 @@
         "multimode",
         "nlargest",
         "nsmallest",
+        "Primality",
         "quantiles",
         "stdev"
     ]

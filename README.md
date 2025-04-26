@@ -2,6 +2,7 @@
    - Sorting (정렬)
       - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
    - Number Theory (정수론)
+      - [Primality Test](#primaltiy-test-소수-판정)
       - [Euclidean Algorithm (유클리드 호제법)](#euclidean-algorithm-유클리드-호제법)
 2. Modules (모듈)
    - [General](#general)
@@ -47,11 +48,28 @@
 즉, IA의 최댓값이 변수로 작용 - 범위가 작을 때 높은 효율
 
 ## Number Theory
+### Primality Test (소수 판정)
+주어진 정수가 소수인지 아닌지를 판별하는 알고리즘.
+#### Trial Division (기본 소수 판별법)
+가장 간단한 소수 판별법.
+```
+1. if n % i == 0 return False (i = range(2, n^0.5 + 1))
+```
+-> **시간 복잡도 O(n^0.5)**
+#### Sieve of Eratosthenes (에라토스테네스의 체)
+한꺼번에 많은 수의 소수를 판별할 때 사용. <br>
+(Prime Array = PA)
+```
+1. PA length = n + 1, PA[0:2] = False
+2. if PA[i], PA[j] = False (i = range(2, n^0.5 + 1), j = range(i*i, n+1, i))
+3. if PA[i], isPrime(i) = True
+```
+-> **시간 복잡도 O(n log log n), log = 이진 로그** 
 ### Euclidean Algorithm (유클리드 호제법)
 최대공약수를 구할 때 가장 빠르고 간단한 알고리즘.
 ```
-a, b (a > b)
-a를 b로 나눈 나머지 r에 대해 gcd(a, b) = gcd(b, r)
+1. a, b (a > b), a % b == r
+2. a, b = b, a % b while b != 0 (gcd(a, b) = gcd(b, r))
 ```
 -> **시간 복잡도 O(log(min(a, b)))**
 
