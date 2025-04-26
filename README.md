@@ -2,7 +2,7 @@
    - Sorting (정렬)
       - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
    - Number Theory (정수론)
-      - [Primality Test](#primaltiy-test-소수-판정)
+      - [Primality Test (소수 판정)](#primality-test-소수-판정)
       - [Euclidean Algorithm (유클리드 호제법)](#euclidean-algorithm-유클리드-호제법)
 2. Modules (모듈)
    - [General](#general)
