@@ -1,7 +1,7 @@
 t = int(input())
 lst = [True] * (10**6 + 1)
 lst[0:2] = [False, False]
-for i in range(2, int(10**6**0.5)+1):
+for i in range(2, int((10**6)**0.5)+1):
     if lst[i]:
         for j in range(i*i, 10**6+1, i):
             lst[j] = False
