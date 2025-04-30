@@ -1,4 +1,5 @@
 1. Algorithm
+   - [Brute-force Algorithm](#brute-force-algorithm-브루트포스-알고리즘)
    - Sorting (정렬)
       - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
    - Number Theory (정수론)
@@ -19,7 +20,11 @@
 ---
 
 # Algorithm
-## Sorting
+## Brute-force Algorithm (브루트포스 알고리즘)
+가능한 모든 경우의 수를 전부 탐색하여 답을 찾는 알고리즘.<br>
+-> 모든 경우를 탐색하므로 **시간 복잡도 O(n!), O(2^n)등 높음**
+
+## Sorting (정렬)
 ### Counting Sort (계수 정렬)
 값의 범위가 작은 경우 빠른 속도를 갖는 정렬 알고리즘.<br>
 (Input Array = IA, Counting Array = CA, Result Array = RA)<br>
@@ -47,7 +52,7 @@
 1,2,4번 과정 O(n), 3번 과정 O(k) -> **시간 복잡도 O(n + k), 메모리 사용량 O(k)**
 즉, IA의 최댓값이 변수로 작용 - 범위가 작을 때 높은 효율
 
-## Number Theory
+## Number Theory (정수론)
 ### Primality Test (소수 판정)
 주어진 정수가 소수인지 아닌지를 판별하는 알고리즘.
 #### Trial Division (기본 소수 판별법)
@@ -72,6 +77,8 @@
 2. a, b = b, a % b while b != 0 (gcd(a, b) = gcd(b, r))
 ```
 -> **시간 복잡도 O(log(min(a, b)))**
+
+---
 
 # Modules
 ## General
@@ -121,6 +128,8 @@
 - `.partial(func, *args, **kwargs)` : 함수 인자 일부 고정해서 새 함수 생성
 - `.cmp_to_key(func)` : 옛날 방식 비교 함수 사용 가능
 - `@ .wraps(func)` : 데코레이터 안에서 원래 함수 메타데이터 유지
+
+---
 
 # Data Type
 ## List
