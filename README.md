@@ -12,6 +12,7 @@
    - [statistics](#import-statistics)
    - [math](#import-math)
    - [functools](#import-functools)
+   - [collections](#import-collections)
 3. Data Type (자료형)
    - [List](#list)
    - [Set](#set)
@@ -128,6 +129,13 @@
 - `.partial(func, *args, **kwargs)` : 함수 인자 일부 고정해서 새 함수 생성
 - `.cmp_to_key(func)` : 옛날 방식 비교 함수 사용 가능
 - `@ .wraps(func)` : 데코레이터 안에서 원래 함수 메타데이터 유지
+
+## import collections
+**고급 자료구조를 제공하여 다양한 방식으로 데이터를 다룰 수 있는 표준 라이브러리**
+- `.Counter(iterable)` : 요소의 개수를 셀 때 사용
+- `.defaultdict(type)` : 기본값이 자동 설정되는 딕셔너리
+- `.namedtuple(name, iterable)` : 이름이 있는 튜플
+- `.deque(iterable)` : 덱
 
 ---
 
