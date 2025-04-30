@@ -185,3 +185,21 @@ frozenset은 변경 불가능(Immutable)
 - `d.pop(key)` : 키 제거하고 값 반환
 - `d.update({key: value}) == d.update(key=value) == d.update([(key, value)])`<br/>
 : 키-값 쌍 한번에 추가, 키 존재 시 값 덮어씀 / 키워드 방식(key=value)은 문자열 키에만 사용 가능
+
+## Stack, Queue, Deque
+**Stack : LIFO(Last In, First Out) 방식의 자료구조**
+- ex. 웹 브라우저 "뒤로 가기", 수식 괄호 검사, DFS, Undo 기능
+**Queue : FIFO(First In, First Out) 방식의 자료구조**
+- ex. 프린터 대기열, 멀티스레딩 작업 대기열, BFS
+**Deque : 양방향 I/O 방식의 자료구조**
+- ex. 슬라이딩 윈도우, BFS
+-> 파이썬에서는 모두 collections.deque를 사용해서 구현 가능
+
+**Method**
+- `dq.append(x)` : 오른쪽 끝에 요소 추가 / `dq.appendleft(x)` : 왼쪽 끝에 요소 추가
+- `dq.pop()` : 오른쪽 끝에서 요소 제거 / `dq.popleft()` : 왼쪽 끝에서 요소 제거
+- `dq.extend(iterable)` : 오른쪽 끝에 iterable 요소 추가 / `dq.extendleft(iterable)` : 왼쪽 끝에 iterable 요소 추가
+- `dq.rotate(n)` : 덱 회전(양수는 오른쪽으로, 음수는 왼쪽으로)
+- `dq.clear()` : 덱 요소 모두 제거
+- `dq.remove(value)` : 덱에서 첫 번째로 나오는 요소 제거
+- `dq.count(x)` : 요소 개수 카운팅
