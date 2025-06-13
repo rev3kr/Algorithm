@@ -1,5 +1,7 @@
 1. Algorithm
-   - [Brute-force Algorithm](#brute-force-algorithm-브루트포스-알고리즘)
+   - Searching (탐색)
+      - [Brute-force Algorithm](#brute-force-algorithm-브루트포스-알고리즘)
+      - [Backtracking](#backtracking-백트래킹-알고리즘)
    - Sorting (정렬)
       - [Counting Sort (계수 정렬)](#counting-sort-계수-정렬)
    - Number Theory (정수론)
@@ -13,6 +15,7 @@
    - [math](#import-math)
    - [functools](#import-functools)
    - [collections](#import-collections)
+   - [itertools](#import-itertools)
 3. Data Type (자료형)
    - [List](#list)
    - [Set](#set)
@@ -21,13 +24,31 @@
 ---
 
 # Algorithm
-## Brute-force Algorithm (브루트포스 알고리즘)
-가능한 모든 경우의 수를 전부 탐색하여 답을 찾는 알고리즘.<br>
+## Searching (탐색)
+### Brute-force (브루트포스 알고리즘)
+가능한 모든 경우의 수를 전부 탐색하여 답을 찾는 알고리즘<br>
 -> 모든 경우를 탐색하므로 **시간 복잡도 O(n!), O(2^n)등 높음**
+
+### Backtracking (백트래킹 알고리즘)
+해를 찾는 도중 막히면 왔던 길을 되돌아가서 다시 해를 찾는 기법<br>
+최적화 문제, 결정 문제에서 많이 사용 -> **미로 찾기, N-Queen, Map coloring, 부분 집합의 합 등**<br>
+```
+def recursive(n):
+   if solution: print or save
+   else:
+      for all child node:
+         if promising(m):
+            move child node
+            recursive(n+1)
+            move parent node
+def promising(m):
+   if not condition: return False
+   else: return True
+```
 
 ## Sorting (정렬)
 ### Counting Sort (계수 정렬)
-값의 범위가 작은 경우 빠른 속도를 갖는 정렬 알고리즘.<br>
+값의 범위가 작은 경우 빠른 속도를 갖는 정렬 알고리즘<br>
 (Input Array = IA, Counting Array = CA, Result Array = RA)<br>
 **양수 배열**
 ```
