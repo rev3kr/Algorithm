@@ -124,7 +124,7 @@
 
 ## import functools
 **함수를 다루는 데 유용한 내장 모듈**
-- `.reduce(func, iterable)` : iterable 객체에 왼쪽에서 오른쪽으로 누적 계산
+- `.reduce(func, iter)` : iterable 객체에 왼쪽에서 오른쪽으로 누적 계산
 - `.lru_cache(maxsize=None)` : 재귀 함수 자동 캐싱
 - `.partial(func, *args, **kwargs)` : 함수 인자 일부 고정해서 새 함수 생성
 - `.cmp_to_key(func)` : 옛날 방식 비교 함수 사용 가능
@@ -132,11 +132,23 @@
 
 ## import collections
 **고급 자료구조를 제공하여 다양한 방식으로 데이터를 다룰 수 있는 표준 라이브러리**
-- `.Counter(iterable)` : 요소의 개수를 셀 때 사용
+- `.Counter(iter)` : 요소의 개수를 셀 때 사용
 - `.defaultdict(type)` : 기본값이 자동 설정되는 딕셔너리
-- `.namedtuple(name, iterable)` : 이름이 있는 튜플
-- `.deque(iterable)` : 덱
+- `.namedtuple(name, iter)` : 이름이 있는 튜플
+- `.deque(iter)` : 덱
 
+## import itertools
+**반복과 관련된 작업을 쉽게 처리할 수 있도록 도와주는 고성능 표준 라이브러리**<br>
+모든 함수의 반환값은 이터레이터라 list() 필수
+- `.permutations(iter, r)` : r개 순열 / `.product(iter, r)` : r개 중복 순열
+- `.combinations(iter, r)` : r개 조합 / `.combinations_with_replacement(iter, r)` : r개 중복 조합
+- `.accumulate(iter)` : 누적 합 / `.accumulate(iter, func)` : 누적 함수 적용
+- `.count(start, step)` : 무한 반복 숫자 생성
+- `.cycle(iter)` : 객체 무한 반복 / `.repeat(element, times)` : 같은 값 반복
+- `.groupby(iter, key)` : 연속된 동일한 값을 그룹화
+- `.filterfalse(func, iter)` : 함수가 False인 값만 추출
+- `.dropwhile(func, iter)` : 함수가 True인 동안 버리다가 첫 False부터 전부 반환
+- `.takewhile(func, iter)` : 함수가 True인 동안 반환, False가 나오면 즉시 중단
 ---
 
 # Data Type
